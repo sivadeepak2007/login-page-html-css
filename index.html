@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Fixora | Login</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+```
+
+</head>
+
+<body>
+
+```
+<main class="login-container">
+
+    <section class="login-card">
+
+        <a href="index.html" class="brand" aria-label="Fixora home">
+            <span class="brand-icon">F</span>
+            <span class="brand-name">fixora<span class="brand-dot">.</span></span>
+        </a>
+
+        <div class="login-heading">
+            <span class="welcome-label">WELCOME BACK</span>
+            <h1>Login to Fixora</h1>
+            <p>Your workspace, organized in one place.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="admin@gmail.com"
+                    autocomplete="username"
+                    required
+                >
+
+                <small id="emailError" class="field-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="toggle-password"
+                        aria-label="Show password"
+                        aria-pressed="false"
+                    >
+                        Show
+                    </button>
+                </div>
+
+                <small id="passwordError" class="field-error"></small>
+            </div>
+
+            <div class="form-options">
+                <label class="remember-option">
+                    <input type="checkbox" id="rememberMe">
+                    <span>Remember me</span>
+                </label>
+
+                <a href="#" id="forgotPassword">Forgot password?</a>
+            </div>
+
+            <p
+                id="loginMessage"
+                class="login-message"
+                role="alert"
+                aria-live="polite"
+            ></p>
+
+            <button type="submit" class="login-button">
+                Login <span aria-hidden="true">→</span>
+            </button>
+
+        </form>
+
+        <div class="divider">
+            <span>YOUR PRODUCTIVITY STARTS HERE</span>
+        </div>
+
+        <p class="signup-text">
+            New to Fixora?
+            <a href="signup.html">Create an account</a>
+        </p>
+
+        <p class="footer-text">
+            © 2026 Fixora. All rights reserved.
+        </p>
+
+    </section>
+
+    </aside>
+
+</main>
+```
+
+</body>
+</html>

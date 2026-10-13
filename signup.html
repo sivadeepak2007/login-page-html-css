@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Fixora</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="signup.js" defer></script>
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <a href="index.html" class="brand">
+                <span class="brand-icon">F</span>
+                <span class="brand-name">
+                    fixora<span class="brand-dot">.</span>
+                </span>
+            </a>
+
+            <div class="login-heading">
+                <span class="welcome-label">JOIN FIXORA</span>
+
+                <h1>Create your account</h1>
+
+                <p>
+                    Get started by creating your personal account.
+                </p>
+            </div>
+
+            <form id="signupForm" novalidate>
+
+                <div class="form-group">
+                    <label for="fullName">Full name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <small id="nameError" class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email address</label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <small id="emailError" class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <small id="passwordError" class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Enter your password again"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <small id="confirmError" class="field-error"></small>
+                </div>
+
+                <p
+                    id="signupMessage"
+                    class="login-message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+                <button type="submit" class="login-button">
+                    Create Account →
+                </button>
+
+            </form>
+
+            <div class="divider">
+                <span>ALREADY HAVE AN ACCOUNT?</span>
+            </div>
+
+            <p class="signup-text">
+                Already registered?
+                <a href="index.html">Login here</a>
+            </p>
+
+            <p class="footer-text">
+                © 2026 Fixora. All rights reserved.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

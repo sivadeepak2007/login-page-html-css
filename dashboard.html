@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Fixora | Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<script>
+    // Protect the dashboard from unauthenticated access.
+    if (
+        sessionStorage.getItem("fixoraLoggedIn") !== "true" &&
+        localStorage.getItem("fixoraLoggedIn") !== "true"
+    ) {
+        window.location.replace("index.html");
+    }
+</script>
+
+<script src="dashboard.js" defer></script>
+```
+
+</head>
+
+<body>
+
+```
+<header class="navbar">
+
+    <a href="dashboard.html" class="brand">
+        <span class="brand-icon">F</span>
+        <span>fixora<span class="brand-dot">.</span></span>
+    </a>
+
+    <div class="header-actions">
+        <span id="welcomeMessage">Welcome, Admin!</span>
+        <button id="logoutButton" type="button">Logout ↗</button>
+    </div>
+
+</header>
+
+<main class="dashboard-container">
+
+    <section class="page-heading">
+        <div>
+            <span class="eyebrow">OVERVIEW</span>
+            <h1>Dashboard</h1>
+            <p>Welcome back! Here's what's happening today.</p>
+        </div>
+
+        <div class="dashboard-date" id="currentDate"></div>
+    </section>
+
+    <section class="summary-cards">
+
+        <article class="summary-card">
+            <div class="card-top">
+                <span>Total Users</span>
+                <span class="card-icon purple">♙</span>
+            </div>
+
+            <h2>120</h2>
+            <p class="card-description">Registered users</p>
+        </article>
+
+        <article class="summary-card">
+            <div class="card-top">
+                <span>Active Users</span>
+                <span class="card-icon green">✓</span>
+            </div>
+
+            <h2>95</h2>
+            <p class="card-description">Currently active</p>
+        </article>
+
+        <article class="summary-card">
+            <div class="card-top">
+                <span>Pending Requests</span>
+                <span class="card-icon orange">◷</span>
+            </div>
+
+            <h2>25</h2>
+            <p class="card-description">Awaiting review</p>
+        </article>
+
+    </section>
+
+    <section class="users-section">
+
+        <div class="section-heading">
+            <div>
+                <h2>Recent Users</h2>
+                <p>Overview of recently added users.</p>
+            </div>
+
+            <span class="user-count">3 users</span>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="user-name">
+                                <span class="avatar avatar-purple">R</span>
+                                Rahul
+                            </div>
+                        </td>
+                        <td>rahul@gmail.com</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="user-name">
+                                <span class="avatar avatar-blue">P</span>
+                                Priya
+                            </div>
+                        </td>
+                        <td>priya@gmail.com</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="user-name">
+                                <span class="avatar avatar-orange">A</span>
+                                Arjun
+                            </div>
+                        </td>
+                        <td>arjun@gmail.com</td>
+                        <td>
+                            <span class="status pending">Pending</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <footer class="dashboard-footer">
+        Made with care by Fixora.
+    </footer>
+
+</main>
+```
+
+</body>
+</html>
